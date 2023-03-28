@@ -1,4 +1,7 @@
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     color: cadetblue;
@@ -18,13 +21,17 @@ button{
 
 }
 
-.boxSuma{
+.boxPersona{
     background-color: beige;
-    padding-left: 0px;
-    padding-bottom: 3px;
-    margin-bottom: 10%;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 40wv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+h1,label, input{
+    width: 85%;
 }
 

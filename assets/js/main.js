@@ -1,21 +1,20 @@
 
 // ESTA ES MI FUNCION DE SUMA
-function sumar(){
-
-    var numero1 = Number(document.getElementById("numero1").value);
-    var numero2 = Number(document.getElementById("numero2").value); 
-    var elementoResultado = document.getElementById("resultado");
-
-    console.log(`el valor de numero 1 es: ${numero1}`)
-    console.log(`el valor de numero 1 es: ${numero2}`)
+function controlar(){
     
-    var resultado = numero1 + numero2;
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value; 
+    var edad = document.getElementById("edad").value;
+    var resultado = document.getElementById("resultado");
 
-    if(resultado >= 100 ){
-        elementoResultado.textContent = `el resultado es MAYOR IGUAL a 100 (${resultado})`
-   
+    var nombre_completo = nombre + ' ' + apellido;
+
+    const EDAD_MAXIMA = Number(50);
+    
+    if(edad >= EDAD_MAXIMA ){
+        resultado.textContent = `La edad del usuario ${nombre_completo} es MAYOR a ${EDAD_MAXIMA}`;
     }else{
-        elementoResultado.textContent = `el resultado es MENOR a 100 (${resultado})`
+        resultado.textContent = `La edad del usuario ${nombre_completo} es MENOR a ${EDAD_MAXIMA}`;
     }
 }
 
